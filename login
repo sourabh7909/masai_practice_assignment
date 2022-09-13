@@ -7,7 +7,7 @@ if(num%i==0){
 factor++
 }
 }
-if(factor==0){
+if(factor==2){
 console.log(num,"is prime")
 }else{
 console.log(num,"is not prime)
@@ -21,10 +21,10 @@ let x=pal
 let bag=""
 while(i>0){
 let i=pal%10;
-pal=(pal/10)
+pal=Math.floor(pal/10)
 bag=bag*10+i}
 
 if(bag==x){
-console.log("No")}
-else{
 console.log("Yes")}
+else{
+console.log("No")}
